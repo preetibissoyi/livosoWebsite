@@ -123,10 +123,10 @@
 
 /* end */
 .submenu a {
-  /* color: yourColor; */
-  font-size: 11px!important;
-  /* font-weight: 400; */
-  font-family:  'Lato,sans-serif';
+ font-family: Arial, Helvetica, sans-serif;
+  font-size: 11px;
+   font-weight: lighter 
+ 
 }
 
 /* language dropdown */
@@ -146,6 +146,7 @@
 .language-dropdown {
   position: relative;
   display: inline-block;
+  height:auto ;
 }
 /* Display the dropdown content on hover */
 .language-dropdown:hover .dropdown-content {
@@ -163,10 +164,11 @@
   top: 100%; /* Position just below the button */
   left: 0; /* Align with the left edge of the button */
   margin-top: 10px;
-  height:auto;
+  height:auto ;
+  
 }
 .language-dropdown .dropdown-content a {
-  color: #000;
+  color:rgb(58, 57, 57);
   /* padding: 10px 8px; Adjust the padding as needed */
   text-decoration: none;
   display: block;
@@ -174,6 +176,7 @@
    margin:20px ;
   margin-inline:20px ;
   font-size: 12px;
+  font-weight:lighter;
 }
 .language-dropdown .dropdown-content a:hover {
   color: var(--tp-common-green-2);
