@@ -48,6 +48,8 @@
   --tp-border-2: #EBECF0;
 }
 
+ 
+
 @media (min-width: 1200px) {
   .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
     max-width: 1200px;
@@ -85,10 +87,10 @@
 }
 .submenu li {
   margin-bottom: 5px;
-  color:black;
+  color:rgb(34, 34, 34);
   text-align: left;
   height:auto;
-  font-family: 'Lato,sans-serif';
+  font-family:  Arial, Helvetica, sans-serif;
   padding: 4px;
  
 }
@@ -101,31 +103,32 @@
 .submenu .column  h5{
   color:rgb(85, 205, 226) ;
   font-size:15px;
-  font-family: 'Lato,sans-serif';
+  font-family:  Arial, Helvetica, sans-serif;
   /* height:20px */
-  margin-left:0 ;
+  margin: left 5px; ;
   
 }
 .submenu h6{
   color:rgb(85, 205, 226) ;
   font-size:15px;
-  font-family: 'Lato,sans-serif';
+  font-family:  Arial, Helvetica, sans-serif;
   /* height:20px */
   margin-left:40px ;
   
 }
 
 .submenu .column li a {
-  font-size: 12px!important;
+  font-size: 14px!important;
   /* font-weight: 400; */
-  font-family: 'Lato,sans-serif';
+  font-family:  Arial, Helvetica, sans-serif;
 }
 
 /* end */
-.submenu a {
+.submenu li a {
  font-family: Arial, Helvetica, sans-serif;
-  font-size: 11px;
-   font-weight: lighter 
+  font-size: 20px;
+   font-weight: lighter ;
+
  
 }
 
@@ -4578,12 +4581,13 @@ input[type=color] {
 .tp-header-2__main-menu > nav > ul > li > a {
   padding: 40px 0;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 10px;
   line-height: 14px;
   color: var(--tp-common-white);
   font-family: var(--tp-ff-mont);
   display: inline-block;
   position: relative;
+ 
 }
 .tp-header-2__main-menu > nav > ul > li > a::after {
   content: "";
