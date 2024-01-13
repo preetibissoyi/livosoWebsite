@@ -67,10 +67,11 @@
 .submenu {
   display: flex;
   flex-wrap: wrap;
- padding: 32px 32px 20px;
+ /* padding: 12px 12px 0px; */
   border-radius:8px;
   grid-column-gap:32px;
   text-align: left;
+  
 
 }
 .submenu .column {
@@ -79,75 +80,111 @@
   list-style: none;
   justify-content:space-between;
   margin:10px;
+  margin-left:28px ;
+  
 }
 .submenu li {
   margin-bottom: 5px;
   color:black;
   text-align: left;
-  height:30px
+  height:auto;
+  font-family: 'Lato,sans-serif';
+  padding: 4px;
+ 
 }
+/* .submenu li:a {
+  font-size: 1px;
+} */
 .submenu li:hover {
   color: var( --tp-common-green-2);
 }
-.submenu h6{
+.submenu .column  h5{
   color:rgb(85, 205, 226) ;
-  font-size:16px;
-  font-family:sans-serif;
-  height:20px
+  font-size:15px;
+  font-family: 'Lato,sans-serif';
+  /* height:20px */
+  margin-left:0 ;
   
 }
-/* end */
+.submenu h6{
+  color:rgb(85, 205, 226) ;
+  font-size:15px;
+  font-family: 'Lato,sans-serif';
+  /* height:20px */
+  margin-left:40px ;
+  
+}
 
+.submenu .column li a {
+  font-size: 12px!important;
+  /* font-weight: 400; */
+  font-family: 'Lato,sans-serif';
+}
+
+/* end */
+.submenu a {
+  /* color: yourColor; */
+  font-size: 11px!important;
+  /* font-weight: 400; */
+  font-family:  'Lato,sans-serif';
+}
 
 /* language dropdown */
-.dropdown {
+.language-dropdown a i.fas.fa-globe {
+  font-size: 24px; /* Adjust the size as needed */
+  color: #fff; /* Set color to white */
+  background-color: transparent; /* Remove any background color */
+}
+/* Display the dropdown content on hover */
+.language-dropdown a i.fas.fa-globe {
+  font-size: 24px; /* Adjust the size as needed */
+  color: #fff; /* Set color to white */
+  background-color: transparent;
+  margin-left: 55px;
+}
+/* Additional styling for the language dropdown container */
+.language-dropdown {
   position: relative;
   display: inline-block;
 }
-
-/* Style for the dropdown button */
-.dropdown a {
-  color: #fff;
-  text-decoration: none;
-  padding: 10px;
-  display: inline-block;
-}
-
-/* Style for the dropdown content */
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #333;
-  min-width: 160px;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-  z-index: 1;
-}
-
-/* Style for the dropdown content links */
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #333;
-  min-width: 300px; /* Increase the width as needed */
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-  z-index: 1;
-}
-/* Style for the dropdown content links on hover */
-.dropdown-content a:hover {
-  color: var( --tp-common-green-2);
-}
-
-/* Style for the dropdown container on hover */
-.dropdown:hover .dropdown-content {
+/* Display the dropdown content on hover */
+.language-dropdown:hover .dropdown-content {
   display: block;
 }
-
-/* Additional styling for the language dropdown */
-#languageDropdown h6 {
-  margin: 10px;
+/* Additional styling for the language dropdown content */
+.language-dropdown .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  min-width: 100px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  border-radius: 8px;
+  top: 100%; /* Position just below the button */
+  left: 0; /* Align with the left edge of the button */
+  margin-top: 10px;
+  height:auto;
+}
+.language-dropdown .dropdown-content a {
+  color: #000;
+  /* padding: 10px 8px; Adjust the padding as needed */
+  text-decoration: none;
+  display: block;
+  text-align:justify;
+   margin:20px ;
+  margin-inline:20px ;
+  font-size: 12px;
+}
+.language-dropdown .dropdown-content a:hover {
+  color: var(--tp-common-green-2);
+}
+.language-dropdown #languageDropdown h6 {
+  margin: 0;
   padding: 10px 16px;
-  color: #199cd8;
- 
+  color: #199CD8;
+  font-size: 14px;
+  text-align:justify;
+margin-inline:5px ;
 }
 /* end the drop down of lang */
 /*---------------------------------
@@ -228,7 +265,7 @@ ul {
 
 p {
   color: var(--tp-text-body);
-  font-weight: 400;
+  /* font-weight: 400; */
   font-size: 16px;
   line-height: 24px;
 }
@@ -4016,7 +4053,7 @@ input[type=color] {
   right: 0;
 }
 .header-bottom__plr-4 {
-  padding: 0px 315px;
+  padding: 0px 915px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 @media only screen and (min-width: 1600px) and (max-width: 1800px) {
@@ -4367,13 +4404,16 @@ input[type=color] {
 }
 .header-bottom__btn {
   line-height: 0;
+  
 }
 .header-bottom__btn a {
   margin-left: 25px;
+ 
 }
 @media (max-width: 767px) {
   .header-bottom__btn a {
     box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    
   }
 }
 .header-bottom__bar {
