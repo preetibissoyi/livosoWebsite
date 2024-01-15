@@ -6,12 +6,12 @@
   /**
   @font family declaration
   */
-  --tp-ff-body: 'Plus Jakarta Sans', sans-serif;
-  --tp-ff-heading: 'Plus Jakarta Sans', sans-serif;
+  --tp-ff-body:'Plus Jakarta Sans', sans-serif;
+  --tp-ff-heading:'Plus Jakarta Sans', sans-serif;
   --tp-ff-fontawesome: Font Awesome 5 Pro;
-  --tp-ff-mont: 'Montserrat Alternates', sans-serif;
-  --tp-ff-urban: 'Urbanist', sans-serif;
-  --tp-ff-dm: 'DM Serif Display', serif;
+  --tp-ff-mont:'Montserrat Alternates',sans-serif;
+  --tp-ff-urban:'Urbanist',sans-serif;
+  --tp-ff-dm:'DM Serif Display',serif;
   /**
   @color declaration
   */
@@ -63,16 +63,14 @@
   box-sizing: border-box;
 }
 
-/* megamenu-page */
-.submenu {
+ /* megamenu-page  */
+ .submenu {
   display: flex;
   flex-wrap: wrap;
  /* padding: 12px 12px 0px; */
   border-radius:8px;
   grid-column-gap:32px;
   text-align: left;
-  
-
 }
 .submenu .column {
   flex: 1;
@@ -81,16 +79,15 @@
   justify-content:space-between;
   margin:10px;
   margin-left:28px ;
-  
 }
 .submenu li {
   margin-bottom: 5px;
-  color:black;
+  color:rgb(34, 34, 34);
   text-align: left;
   height:auto;
-  font-family: 'Lato,sans-serif';
-  padding: 4px;
- 
+  font-family: 'Open Sans', sans-serif !important;
+  padding: 3px;
+  font-size: 13px;
 }
 /* .submenu li:a {
   font-size: 1px;
@@ -101,35 +98,34 @@
 .submenu .column  h5{
   color:rgb(85, 205, 226) ;
   font-size:15px;
-  font-family: 'Lato,sans-serif';
+  font-family: 'Open Sans', sans-serif !important;
   /* height:20px */
-  margin-left:0 ;
-  
+  margin: left 5px; ;
 }
 .submenu h6{
   color:rgb(85, 205, 226) ;
   font-size:15px;
-  font-family: 'Lato,sans-serif';
+  font-family: 'Open Sans', sans-serif !important;
+  font-weight: bolder;
+
   /* height:20px */
   margin-left:40px ;
-  
 }
-
 .submenu .column li a {
-  font-size: 12px!important;
-  /* font-weight: 400; */
-  font-family: 'Lato,sans-serif';
+  font-size: 14px!important;
+  font-family: 'Open Sans', sans-serif !important;
+
 }
 
-/* end */
-.submenu a {
- font-family: Arial, Helvetica, sans-serif;
-  font-size: 11px;
-   font-weight: lighter 
- 
+.submenu li a {
+  font-family: 'Open Sans', sans-serif !important;
+  font-size: 14px;
+  font-weight:300;
+  color:var(--tp-common-black) ;
 }
 
-/* language dropdown */
+/* end of megamenu */
+ /* language dropdown */ */
 .language-dropdown a i.fas.fa-globe {
   font-size: 24px; /* Adjust the size as needed */
   color: #fff; /* Set color to white */
@@ -147,6 +143,8 @@
   position: relative;
   display: inline-block;
   height:auto ;
+  margin: 50px;
+ 
 }
 /* Display the dropdown content on hover */
 .language-dropdown:hover .dropdown-content {
@@ -163,20 +161,21 @@
   border-radius: 8px;
   top: 100%; /* Position just below the button */
   left: 0; /* Align with the left edge of the button */
-  margin-top: 10px;
+  margin: 10px;
   height:auto ;
+ 
   
 }
 .language-dropdown .dropdown-content a {
-  color:rgb(58, 57, 57);
-  /* padding: 10px 8px; Adjust the padding as needed */
-  text-decoration: none;
-  display: block;
-  text-align:justify;
-   margin:20px ;
-  margin-inline:20px ;
-  font-size: 12px;
-  font-weight:lighter;
+  margin-bottom: 5px;
+  color:rgb(34, 34, 34);
+  text-align: left;
+  height:auto;
+  font-family:  Arial, Helvetica, sans-serif;
+  padding: 14px;
+  font-size: 14px !important;
+  margin-top: 8px;
+  
 }
 .language-dropdown .dropdown-content a:hover {
   color: var(--tp-common-green-2);
@@ -4037,6 +4036,7 @@ input[type=color] {
 .header-bottom__lang-submenu li {
   list-style: none;
   margin-bottom: 15px;
+ 
 }
 .header-bottom__lang-submenu li:last-child {
   margin-bottom: 0;
@@ -4184,6 +4184,7 @@ input[type=color] {
   position: relative;
   letter-spacing: 1px;
   font-weight: 500;
+  
 }
 
 .header-bottom__main-menu nav ul li .submenu li a::after {
@@ -4529,28 +4530,43 @@ input[type=color] {
   transform: scaleY(0);
   transform-origin: top center;
   text-align: left;
+  border-radius: 5px;
 }
 .tp-header-2__main-menu > nav > ul > li > .submenu > li {
   margin: 0;
   display: block;
   margin-bottom: 15px;
   padding: 0 40px;
+ 
+ 
 }
 .tp-header-2__main-menu > nav > ul > li > .submenu > li:last-child {
   margin-bottom: 0;
 }
-.tp-header-2__main-menu > nav > ul > li > .submenu > li > a {
+.tp-header-2__main-menu > nav > ul > li > .submenu > li > ul > a {
   padding: 0;
   margin: 0;
   display: inline-block;
   text-transform: capitalizes;
-  font-size: 14px;
-  color: var(--tp-common-black);
-  font-family: var(--tp-ff-mont);
+  font-size: 11px;
+  color:var(--tp-grey-1);
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   position: relative;
   letter-spacing: 1px;
-  font-weight: 500;
+  font-weight:bolder;
 }
+.submenu h6{
+  color:rgb(7, 208, 243) ;
+  font-size:14px;
+  font-family: 'Open Sans', sans-serif !important;
+  letter-spacing:1.5px;
+  /* height:20px */
+  margin-left:40px ;
+  
+}
+
+
+/*  */
 .tp-header-2__main-menu > nav > ul > li > .submenu > li:hover a {
   color: var(--tp-common-green);
 }
@@ -4614,13 +4630,15 @@ input[type=color] {
   margin-left: 25px;
 }
 
-.inner-header-2 .header-bottom__main-menu-inner nav ul li::before {
+ .inner-header-2 .header-bottom__main-menu-inner nav ul li::before {
   background-color: var(--tp-common-blue-4);
 }
+
 .inner-header-2 .header-bottom__main-menu-inner nav ul li::after {
   background: linear-gradient(180deg, rgba(96, 14, 228, 0) 0%, rgba(96, 14, 228, 0.1) 100%);
   filter: drop-shadow(0px 2px 0px #600EE4);
 }
+  
 .inner-header-2 .header-bottom__main-menu-inner nav ul li a {
   color: var(--tp-common-black);
 }
@@ -4640,7 +4658,7 @@ input[type=color] {
 }
 .inner-header-2 .header-bottom__action-2:hover span {
   color: var(--tp-common-blue-4);
-}
+} 
 
 /*----------------------------------------*/
 /*  16. HERO CSS START
